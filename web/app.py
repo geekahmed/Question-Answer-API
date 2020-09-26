@@ -14,9 +14,6 @@ import werkzeug.exceptions as ex
 
 app = Flask(__name__)
 
-app.config.from_object('config.ProductionConfig')
-setup_db(app, app.config.get('SQLALCHEMY_DATABASE_URI'))
-
 
 QUESTIONS_PER_PAGE = 10
 
